@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 export const Color = {
@@ -56,10 +56,12 @@ export const Section = styled.section`
   justify-content: center;
   padding-top: 6%; 
   flex-direction: row;
+  margin-top: -4%;
 
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
+    margin-top: -13%;
   }
 
   div {
@@ -70,20 +72,36 @@ export const Section = styled.section`
     font-size: 100px;
     font-weight: 800;
     margin-top: -10px;
-    margin-right: 20%;
+    margin-left: -40%;
+  
+    @media (max-width: 768px) {
+      margin-left: 0px;
+
+    }
+
   }
 
   p {
     font-size: 20px;
     margin: 0;
-    margin-right: 20%;
+    margin-left: -40%;
+
+    @media (max-width: 768px) {
+      margin-left: 0px;
+
+    }
   }
 
   p.bio {
     font-size: 15px;
     color: ${Color.Colors.textSecondary};
     margin-top: 20px;
-    margin-right: 20%;
+    margin-left: -40%;
+
+    @media (max-width: 768px) {
+      margin-left: 0px;
+
+    }
   }
 `;
 
@@ -104,22 +122,32 @@ export const Moldura = styled.div`
   @media (max-width: 768px) {
     margin-left: 0px;
     margin-top: 10%;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
 
   }
 
-
+  &:hover {
+  
+}
 
 `;
 
 export const MyImg = styled.img`
-   max-width: 200px;
-   max-height: 200px; 
-   border-radius: 30px;
+   max-width: 400px;
+   max-height: 400px; 
+   border-bottom-right-radius: 130px;
 
 
+   @media (max-width: 768px) {
+    margin-left: 0px;
+    border-radius: 30px;
+    width: 250px;
+    height: 250px;
+    
 
+  }
 
 
 
@@ -129,14 +157,22 @@ export const MyImg = styled.img`
 
 
 export const StyledButton = styled.button`
-background-color: #0d6efd;
+background-color:${Color.Colors.Primary};
 color: white;
 padding: 0.5rem 1rem;
 border: none;
 border-radius: 0.25rem;
 transition: background 0.3s ease;
+margin-left: -40%;
+
+
+@media (max-width: 768px) {
+      margin-left: 0px;
+
+}
+
 
 &:hover {
-  background-color: #0b5ed7;
+  background-color:${Color.Colors.accent};
 }
 `;
