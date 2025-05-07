@@ -47,14 +47,14 @@ background-color: ${Color.Colors.background};
 `;
 
 export const Section = styled.section`
-  background: white;
-
+  background: ${Color.Colors.background};
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 6%; 
+  padding-top: 6%;
+  padding-bottom:10% ;
   flex-direction: row;
   margin-top: -4%;
 
