@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export const Color = {
   Colors: {
     Primary: "#4ADE80",       // Cor principal (verde claro moderno)
-    background: "#F8FAF9",    // Fundo claro
+    background: "radial-gradient(circle, #FFFFFF 0%, #F1F5F9 60%, #D1D5DB 100%)", // Centro branco, bordas levemente mais escuras
+    background2: "linear-gradient(135deg, #4ADE80 0%, #34D399 50%, #10B981 100%)",
     text: "#1E293B",          // Texto principal
     textSecondary: "#94A3B8", // Texto secundário
     accent: "#065F46",        // Detalhes/hover/botões escuros
@@ -48,8 +49,6 @@ background-color: ${Color.Colors.background};
 
 export const Section = styled.section`
   background: ${Color.Colors.background};
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +101,14 @@ export const Section = styled.section`
       margin-left: 0px;
 
     }
+
+    
   }
+
+  h1:hover,p:hover {
+    transform: scale(1.01);
+}
+
 `;
 
 
@@ -129,8 +135,10 @@ export const Moldura = styled.div`
   }
 
   &:hover {
-  
+    transform: scale(1.01);
 }
+
+
 
 `;
 
@@ -174,5 +182,6 @@ margin-left: -40%;
 
 &:hover {
   background-color:${Color.Colors.accent};
+  transform: scale(1.01);
 }
 `;
