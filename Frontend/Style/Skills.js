@@ -20,17 +20,36 @@ export const SectionSkills = styled.section`
     font-size: 50px;
     font-weight: 600;
     text-align: center;
-    margin-left: -32%;
+    margin-left: -36%;
     margin-top: -1%;
 
     
     @media (max-width: 768px) {
-      margin-left: 0px;
+      margin-left:0;
 
     }
+
+    &:hover {
+    transform: translateY(-5px);
+  }
+
 }
 `;
 
+
+export const AjustarBase = styled.div`
+  margin-left: 10%;
+  gap: 40px;
+
+    @media (max-width: 768px) {
+      margin-left: 0px;
+
+    }
+
+  
+
+
+`
 
 
 export const Base = styled.div`
@@ -39,7 +58,6 @@ export const Base = styled.div`
   width: 400px;
   height: 400px;
   border-radius: 30px;
-  margin-left: 110%;
   margin-top: 20%;
   padding: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -67,7 +85,6 @@ export const Base = styled.div`
 
   }
 
-
   .skills-list {
     display: flex;
     flex-direction: column;
@@ -93,12 +110,16 @@ export const Base = styled.div`
 
       svg {
       color: white; 
-    }
+      }
+      
     }
   }
 
+
   @media (max-width: 768px) {
-    padding: 20px;
+    padding: 40 40 40 40 ;
+    width:300px;
+    height: 300px;
 
     h4 {
       font-size: 22px;
@@ -107,6 +128,9 @@ export const Base = styled.div`
     .skill-item {
       font-size: 16px;
     }
+
+
   }
 
 `;
+
