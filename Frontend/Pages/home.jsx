@@ -47,7 +47,7 @@ const Home = () => {
 
           <div className="col-md-5 d-flex justify-content-center mt-4 mt-md-0">
             <Moldura>
-              <MyImg src="Frontend\Public\images\eu1.png" alt="Minha imagem" />
+              <MyImg src="/images/eu1.png" alt="Minha imagem" />
             </Moldura>
           </div>
         </Section>
