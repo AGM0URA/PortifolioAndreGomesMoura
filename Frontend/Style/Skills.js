@@ -20,12 +20,13 @@ export const SectionSkills = styled.section`
     font-size: 50px;
     font-weight: 600;
     text-align: center;
-    margin-left: -36%;
+    margin-left: -27.6%;
     margin-top: -1%;
 
     
     @media (max-width: 768px) {
       margin-left:0;
+      font-size:40px;
 
     }
 
@@ -45,10 +46,6 @@ export const AjustarBase = styled.div`
       margin-left: 0px;
 
     }
-
-  
-
-
 `
 
 
