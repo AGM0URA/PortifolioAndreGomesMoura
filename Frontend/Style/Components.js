@@ -29,17 +29,41 @@ export const DivSocial = styled.div`
   gap: 20px;
 
 svg{
-  font-size: 150%;
+  font-size: 250%;
   fill: ${Color.Colors.text};
 }
+
+  @media (max-width: 768px) {
+  svg{
+    font-size: 150%;
+    fill: ${Color.Colors.text};
+  }
+  }
 
 `;
 
 
 
 export const Logo = styled.h1`
+display: flex;
+justify-content: center;
+align-items: center;
 color: ${Color.Colors.text};
 font-size: 200%;
+gap: -30px;
+
+svg{
+  font-size: 50px;
+}
+
+  @media (max-width: 768px) {
+    font-size: 100%;
+
+    svg{
+       font-size: 30px;
+    }
+
+  }
 `;
 
 export const Main = styled.main`
@@ -164,7 +188,11 @@ export const MyImg = styled.img`
 
 
 
-export const StyledButton = styled.button`
+export const ButtonWhats = styled.button`
+display: flex;
+width: 300px;
+height: 70px;
+gap: 10px;
 background-color:${Color.Colors.Primary};
 color: white;
 padding: 0.5rem 1rem;
@@ -172,13 +200,15 @@ border: none;
 border-radius: 0.25rem;
 transition: background 0.3s ease;
 margin-left: -40%;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+border-radius: 30px;
 
 
 @media (max-width: 768px) {
       margin-left: 0px;
-
 }
-
 
 &:hover {
   background-color:${Color.Colors.accent};
