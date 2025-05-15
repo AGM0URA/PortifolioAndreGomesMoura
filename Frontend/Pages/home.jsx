@@ -27,8 +27,8 @@ const Home = () => {
       <NavBar className="navbar navbar-expand-lg">
         <Logo className="navbar-brand">AGM</Logo>
         <DivSocial className="d-flex gap-3">
-          <FaGithub />
-          <FaLinkedin />
+          <a href="https://github.com/AGM0URA" ><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/andr%C3%A9gomesmoura/" ><FaLinkedin /></a>
         </DivSocial>
       </NavBar>
 
@@ -39,7 +39,7 @@ const Home = () => {
             <h1>André</h1>
             <p>Gomes Moura</p>
             <p className="bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus a turpis at congue. Integer vehicula leo eleifend maximus interdum. Duis semper, mauris nec semper.
+              Olá! Me chamo André Gomes Moura, sou um desenvolvedor web em constante evolução. Este é o meu portfólio, feito para mostrar meu trabalho e minha jornada. Espero que gostem e aproveitem para explorar tudo por aqui!
             </p>
 
             <StyledButton className="mt-4">Saiba mais</StyledButton>
@@ -52,7 +52,7 @@ const Home = () => {
           </div>
         </Section>
         <SectionSkills className="row justify-content-center align-items-center">
-          <h1>Skills</h1>
+          <h1>Skills Front-End</h1>
           <AjustarBase className="col-md-5 d-flex flex-column flex-md-row  mt-4 mt-md-0  align-items-center " >
             <Base>
               <h4>Linguagens e Tecnologias</h4>
