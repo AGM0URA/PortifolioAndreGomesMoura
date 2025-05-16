@@ -72,7 +72,7 @@ background-color: ${Color.Colors.background};
 `;
 
 export const Section = styled.section`
-  background: ${Color.Colors.background};
+
   display: flex;
   align-items: center;
   justify-content: center;

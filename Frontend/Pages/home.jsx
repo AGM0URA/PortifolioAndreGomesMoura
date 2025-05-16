@@ -7,7 +7,7 @@ import {
   MyImg,
   Main,
   Section,
-  StyledButton,
+  ButtonWhats,
   Color
 } from "../Style/Components";
 import {
@@ -16,6 +16,10 @@ import {
   AjustarBase
 
 } from "../Style/Skills"
+
+import Particulas from "../Style/Particle"
+
+
 import { MdOutlineCircle } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -33,24 +37,27 @@ const Home = () => {
       </NavBar>
 
       <Main className="container-fluid py-5">
-        <Section className="row justify-content-center align-items-center">
-          <div className="col-md-5">
-            <p>Olá, eu sou</p>
-            <h1>André</h1>
-            <p>Gomes Moura</p>
-            <p className="bio">
-              Olá! Me chamo André Gomes Moura, sou um desenvolvedor web em constante evolução. Este é o meu portfólio, feito para mostrar meu trabalho e minha jornada. Espero que gostem e aproveitem para explorar tudo por aqui!
-            </p>
+        <div style={{ position: "relative" }}>
+          <Particulas />
 
-            <StyledButton className="mt-4">Saiba mais</StyledButton>
-          </div>
+          <Section className="row justify-content-center align-items-center">
+            <div className="col-md-5">
+              <p>Olá, eu sou</p>
+              <h1>André</h1>
+              <p>Gomes Moura</p>
+              <p className="bio">
+                Olá! Me chamo André Gomes Moura, sou um desenvolvedor web em constante evolução. Este é o meu portfólio, feito para mostrar meu trabalho e minha jornada. Espero que gostem e aproveitem para explorar tudo por aqui!
+              </p>
+              <StyledButton className="mt-4">Saiba mais</StyledButton>
+            </div>
 
-          <div className="col-md-5 d-flex justify-content-center mt-4 mt-md-0">
-            <Moldura>
-              <MyImg src="/images/eu1.png" alt="Minha imagem" />
-            </Moldura>
-          </div>
-        </Section>
+            <div className="col-md-5 d-flex justify-content-center mt-4 mt-md-0">
+              <Moldura>
+                <MyImg src="/images/eu1.png" alt="Minha imagem" />
+              </Moldura>
+            </div>
+          </Section>
+        </div>
         <SectionSkills className="row justify-content-center align-items-center">
           <h1>Skills Front-End</h1>
           <AjustarBase className="col-md-5 d-flex flex-column flex-md-row  mt-4 mt-md-0  align-items-center " >
