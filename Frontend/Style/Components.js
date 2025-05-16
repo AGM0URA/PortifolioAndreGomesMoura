@@ -207,7 +207,10 @@ border-radius: 30px;
 
 
 @media (max-width: 768px) {
-      margin-left: 0px;
+  
+   margin-left: auto;
+   margin-right: auto;
+
 }
 
 &:hover {
