@@ -41,7 +41,7 @@ export const AjustarBase = styled.div`
 
 export const Base = styled.div`
   background-color: white;
-  flex: 1 1 320px;   /* Cresce e encolhe, largura base 320px */
+  flex: 1 1 320px;   
   min-width: 280px;
   max-width: 320px;
   min-height: 350px;
@@ -76,6 +76,7 @@ export const Base = styled.div`
     flex-direction: column;
     gap: 16px;
     width: 100%;
+    margin-top: 10%;
   }
 
   .skill-item {
