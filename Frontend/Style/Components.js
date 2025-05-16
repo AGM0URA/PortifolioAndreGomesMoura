@@ -188,7 +188,7 @@ export const MyImg = styled.img`
 
 
 
-export const ButtonWhats = styled.button`
+export const StyledButton  = styled.button`
 display: flex;
 width: 300px;
 height: 70px;
