@@ -7,7 +7,7 @@ import {
   MyImg,
   Main,
   Section,
-  StyledButton,
+  ButtonWhats,
   Color
 } from "../Style/Components";
 import {
